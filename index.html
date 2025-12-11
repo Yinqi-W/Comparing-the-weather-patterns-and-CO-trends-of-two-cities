@@ -6,44 +6,8 @@
 <style>
   body { margin: 0; font-family: Arial, sans-serif; }
 
-.hero {
-  position: relative;
-  overflow: hidden;
-  height: 260px;
-  color: white;
-  text-align: center;
-  padding-top: 120px;
-  background: #78d5f5; /* 天空底色 */
-}
-
-/* 动态云层 */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300%;
-  height: 100%;
-  background-image: url("https://www.transparenttextures.com/patterns/clouds.png");
-  background-size: 400px 400px;  /* 把云放大一点 */
-  opacity: 1;                    /* 云完全不透明，更明显 */
-  animation: cloudMove 20s linear infinite;  /* 20 秒滑一遍，更容易看到在动 */
-}
-
-/* 云朵移动动画 */
-@keyframes cloudMove {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-33.3%); }
-}
-
-.hero h1 {
-  position: relative;
-  z-index: 2;   /* 让标题在云朵上面 */
-  font-size: 48px;
-  font-weight: 700;
-  margin: 0;
-}
-
+background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+background-color: #eef2f3;
 
 
   .hero h1 {
