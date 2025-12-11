@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Weather & CO₂ Trends</title>
-<style>
-  body { margin: 0; font-family: Arial, sans-serif; }
+  <meta charset="UTF-8" />
+  <title>Weather & CO₂ Trends</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
- .hero {
-   background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-background-color: #eef2f3;
+    /* 顶部：天空蓝渐变背景（干净好看、不会出怪问题） */
+    .hero {
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    }
 
-    color: white;
-    text-align: center;
-    padding: 120px 20px;
-  }
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin: 0;
+    }
 
-  .hero h1 {
-    font-size: 48px;
-    margin: 0;
-    font-weight: 700;
-  }
+    /* 下面正文区域 */
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      font-size: 18px;
+    }
 
-  .content {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    font-size: 18px;
-  }
-
-  h2 { color: #2a7d4f; }
-</style>
+    h2 {
+      color: #2a7d4f;
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="hero">
-  <h1>Weather & CO₂ Trends</h1>
-</div>
+  <div class="hero">
+    <h1>Weather & CO₂ Trends</h1>
+  </div>
 
-<div class="content">
-  <h2>Introduction</h2>
-  <p>This project analyzes temperature, precipitation, and CO₂ trends in Rome and Chicago…</p>
-</div>
+  <div class="content">
+    <h2>Introduction</h2>
+    <p>
+      This project analyzes temperature, precipitation, and CO₂ trends in Rome and Chicago…
+    </p>
+  </div>
 
 </body>
 </html>
+
