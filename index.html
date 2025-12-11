@@ -41,18 +41,21 @@ body {
 
 <body>
 
-  <div class="hero">
-    <h1>Weather & CO₂ Trends</h1>
-  </div>
+    <div class="hero">
+        <h1>Weather & CO₂ Trends</h1>
+    </div>
 
-<script>
-fetch("HW06.md")
-  .then(res => res.text())
-  .then(text => {
-    document.getElementById("content").innerHTML =
-      "<pre style='white-space: pre-wrap; font-size: 18px;'>" + text + "</pre>";
-  });
-</script>
+    <!-- 这个一定要有！要放这里！ -->
+    <div id="content" class="content"></div>
+
+    <script>
+        fetch("HW06.md")
+            .then(res => res.text())
+            .then(text => {
+                document.getElementById("content").innerHTML =
+                    "<pre style='white-space: pre-wrap; font-size: 18px;'>" + text + "</pre>";
+            });
+    </script>
 
 </body>
 </html>
